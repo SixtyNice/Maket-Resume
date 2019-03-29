@@ -1,7 +1,8 @@
-$base-color:#3d6cb0;
-$base-font:"Myriad Pro";
-$dfw:1.29; //df= difference коэфициент разности между шириной исходного макета и нужно 1920
+@import "./fonts.scss";
 
+$base-color:#3d6cb0;
+$base-font:"Myriad";
+$dfw:1.29; //df= difference коэфициент разности между шириной исходного макета и нужно 1920
 
 $max-width:1920px;
 $min-width:320px;

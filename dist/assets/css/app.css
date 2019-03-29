@@ -1,1 +1,50 @@
+@font-face {
+  font-family: "Myriad";
+  src: url("/src/fonts/8143.eot");
+  src: url("/src/fonts/8143.woff") format("woff"), url("/src/fonts/8143.ttf") format("ttf"), url("/src/fonts/8143.svg") format("svg"); }
+
+@font-face {
+  font-family: "Myriad";
+  src: url("/src/fonts/8143.eot");
+  src: url("/src/fonts/8143.woff") format("woff"), url("/src/fonts/8143.ttf") format("ttf"), url("/src/fonts/8143.svg") format("svg"); }
+
+@font-face {
+  font-family: "Myriad";
+  src: url("/src/fonts/8143.eot");
+  src: url("/src/fonts/8143.woff") format("woff"), url("/src/fonts/8143.ttf") format("ttf"), url("/src/fonts/8143.svg") format("svg"); }
+
+.base-info {
+  width: 426.15385px;
+  height: 617.69231px; }
+
+.base-info__svg {
+  display: block;
+  width: 185px;
+  height: 185px;
+  margin: 0 auto; }
+
+.base-info__circle-fill-none {
+  fill: none;
+  stroke: #3d6cb0; }
+
+.base-info__circle-fill-base-color {
+  fill: #3d6cb0; }
+
+.base-info__name,
+.base-info__surname,
+.base-info__profession {
+  font-family: "Myriad";
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 0px 0 0 0;
+  text-align: center; }
+
+.base-info__surname {
+  font-weight: bold; }
+
+.body {
+  min-width: 320px;
+  max-width: 1920px;
+  margin: 0;
+  padding: 0; }
 

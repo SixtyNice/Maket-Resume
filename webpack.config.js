@@ -33,6 +33,15 @@ module.exports={
             options:{sourceMap:true, config:{path: 'src/js/postcss.config.js'}}
           }
         ]
+        },{
+          test: /\.(eot|svg|ttf|woff|woff2)$/,
+        use: [
+             {
+                 loader: 'file-loader?name=./src/fonts/[name].[ext]'
+             },
+             
+         ]
+
         },
         {
             test: /\.css$/,

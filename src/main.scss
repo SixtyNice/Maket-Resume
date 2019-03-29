@@ -1,8 +1,15 @@
-
+@import 'utilits/fonts.scss';
 @import 'utilits/vars.scss';
 
 .body{
     min-width: $min-width;
     max-width: $max-width;
+    margin: 0;
+    padding: 0;
 }
+
+
+
 @import 'components/base-info/base-info.scss';
+
+
