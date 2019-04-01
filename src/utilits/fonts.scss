@@ -1,9 +1,12 @@
-@font-face{
-    font-family: "Myriad";;
-    src:  url('/dist/assets/fonts/8143.eot');
-    src:  url('/dist/assets/fonts/8143.woff') format('woff'),
-    url('/dist/assets/fonts/8143.ttf') format('ttf'),
-    url('/dist/assets/fonts/8143.svg') format('svg');
-    
-  }
+ 
+  @font-face {
+    font-family: 'Myriad Pro Regular';
+    src: url('/src/fonts/MyriadPro-Regular.eot');
+    src: url('/src/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+    url('/src/fonts/MyriadPro-Regular.woff') format('woff'),
+    url('/src/fonts/MyriadPro-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    }
+
   

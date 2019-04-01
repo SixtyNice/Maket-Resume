@@ -1,15 +1,26 @@
-@import 'utilits/fonts.scss';
 @import 'utilits/vars.scss';
 
-.body{
-    min-width: $min-width;
-    max-width: $max-width;
+.body{  
     margin: 0;
     padding: 0;
+    width: 100%;
+    height: 100%;
 }
 
 
+.content{
+    position: absolute;
+    width:85%;
+    min-width: $min-width;
+    max-width: $max-width;
+    height: 100%;
+    margin: 6.13% auto;
+    
+}
+
 
 @import 'components/base-info/base-info.scss';
+@import 'components/line/line.scss';
+@import 'components/sections/sections.scss';
 
 

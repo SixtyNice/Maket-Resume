@@ -1,0 +1,56 @@
+@import './src/utilits/vars.scss';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.profile-wrapper {
+    width: 827px;
+    height: 645px;
+    // background-color: #9416BA;   
+    position: relative;
+   margin-top: 165px;
+}
+
+.profile__text{
+    height: 472px;
+    width: 824px;   
+}
+
+.profile__svg {
+
+    width: 148px;
+    height: 148px;
+}
+
+
+.profile__title {
+    position: absolute;
+    left: 173px;
+    top: 41px;
+    font-family: $base-font;
+    font-size:82px; 
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $titles-color;
+    display: block;
+    
+}
+
+.profile__text {
+    font-family: $base-font;
+}
+
+.profile__icon {
+    fill: $icons-color;
+}
+
+.profile__line {
+    position: absolute;
+    left:490px;
+    top: 84px;
+    width: 337px;
+
+
+}

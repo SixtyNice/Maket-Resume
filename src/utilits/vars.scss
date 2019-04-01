@@ -1,8 +1,14 @@
-@import "./fonts.scss";
+@import './src/utilits/fonts.scss';
 
 $base-color:#3d6cb0;
-$base-font:"Myriad";
-$dfw:1.29; //df= difference коэфициент разности между шириной исходного макета и нужно 1920
+$base-font:Myriad Pro Regular;
+$titles-color:#006cb4;
+$icons-color:#0270ba;
+
+@function calc-width($n,$w){
+    @return ($n/$w*100%);
+}
+
 
 $max-width:1920px;
 $min-width:320px;
