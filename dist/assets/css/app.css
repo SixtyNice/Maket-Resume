@@ -1,50 +1,47 @@
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("/src/fonts/MyriadPro-Regular.eot");
-  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype"); }
 
 .body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: "Myriad Pro Regular"; }
 
-.content {
+.content-left-side {
   position: absolute;
   width: 85%;
   min-width: 320px;
   max-width: 1920px;
   height: 100%;
-  margin: 6.13% 4.88%; }
+  margin: 6.13% auto; }
 
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("/src/fonts/MyriadPro-Regular.eot");
-  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype"); }
 
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("/src/fonts/MyriadPro-Regular.eot");
-  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype"); }
 
 .base-info {
-  width: 22.33871%;
-  height: 100%;
-  position: relative; }
+  width: 554px; }
 
 .base-info__svg {
-  position: absolute;
-  display: block;
-  width: 83.93502%;
-  height: 83.93502%;
   margin: 0 auto;
-  padding: 0; }
+  display: block;
+  width: 467px;
+  height: 467px; }
+
+.base-info__img {
+  width: 100%;
+  max-width: 100%;
+  height: 100px; }
 
 .base-info__circle-fill-none {
+  stroke-width: 2;
   fill: none;
   stroke: #3d6cb0; }
 
@@ -52,35 +49,27 @@
   fill: #3d6cb0; }
 
 .base-info-wrapper {
-  top: 89.0411%;
-  position: absolute; }
+  font-family: "Myriad Pro Regular"; }
 
-.base-info__name,
-.base-info__surname,
-.base-info__profession {
-  font-family: Myriad Pro Regular;
-  text-transform: uppercase;
+.base-info-wrapper p {
+  padding: 0;
   margin: 0;
   text-align: center; }
 
 .base-info__name {
-  font-weight: lighter;
-  font-size: 124px; }
+  font-size: 650%; }
 
 .base-info__surname {
-  font-weight: 700;
-  font-size: 123px; }
+  font-size: 768.75%;
+  font-weight: 700; }
 
 .base-info__profession {
-  font-size: 50px;
-  font-weight: 700; }
+  font-size: 312.5%; }
 
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("/src/fonts/MyriadPro-Regular.eot");
-  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
+  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype"); }
 
 .line {
   height: 11px;
@@ -89,13 +78,7 @@
 @font-face {
   font-family: 'Myriad Pro Regular';
   src: url("/src/fonts/MyriadPro-Regular.eot");
-  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal; }
-
-* {
-  padding: 0;
-  margin: 0; }
+  src: url("/src/fonts/MyriadPro-Regular.eot?#iefix") format("embedded-opentype"), url("/src/fonts/MyriadPro-Regular.woff") format("woff"), url("/src/fonts/MyriadPro-Regular.ttf") format("truetype"); }
 
 .profile-wrapper {
   width: 827px;
@@ -115,7 +98,7 @@
   position: absolute;
   left: 173px;
   top: 41px;
-  font-family: Myriad Pro Regular;
+  font-family: "Myriad Pro Regular";
   font-size: 82px;
   text-transform: uppercase;
   font-weight: 700;
@@ -123,7 +106,7 @@
   display: block; }
 
 .profile__text {
-  font-family: Myriad Pro Regular; }
+  font-family: "Myriad Pro Regular"; }
 
 .profile__icon {
   fill: #0270ba; }

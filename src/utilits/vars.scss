@@ -1,12 +1,17 @@
 @import './src/utilits/fonts.scss';
 
 $base-color:#3d6cb0;
-$base-font:Myriad Pro Regular;
+$base-font: 'Myriad Pro Regular';
 $titles-color:#006cb4;
 $icons-color:#0270ba;
 
+
 @function calc-width($n,$w){
-    @return ($n/$w*100%);
+    @return ($n/$w)*100%;
+}
+
+@function get-fz($px) {
+    @return ($px*100%)/16;
 }
 
 
