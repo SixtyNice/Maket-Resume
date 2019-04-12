@@ -12,7 +12,7 @@
     margin-top: calc-width(165, 2244);
 
     .profile__title,
-    .contact__title{
+    .contact__title {
         font-size: get-fz(82);
         font-weight: 700;
         color: $titles-color;
@@ -34,10 +34,6 @@
         margin-top: 30px;
         font-size: get-fz(31);
 
-        .profile__p {
-            
-        }
-
         .profile__span-bold {
             height: 100%;
             font-weight: 700;
@@ -45,6 +41,83 @@
     }
 }
 
-.contact-wrapper{
+.contact-wrapper {
     @extend .profile-wrapper;
+
+    .contact-content {
+        margin-top: 73px;
+        display: flex;
+
+        .contact__p-left-wrapper {
+            height: 363px;
+            @extend .contact__title;
+            // font-size: get-fz(41);
+            font-size: 41px;
+            margin-left: 0;
+
+            .contact__p-left {
+                margin-top: 81px;
+
+            }
+
+            .contact__p-left:nth-child(1) {
+                margin-top: 0;
+                height: 28px;
+                width: 174px;
+            }
+
+            .contact__p-left:nth-child(2) {
+                width: 126px;
+                height: 28px;
+
+            }
+
+            .contact__p-left:nth-child(3) {
+                width: 129px;
+                height: 28px;
+            }
+
+            .contact__p-left:nth-child(4) {
+                width: 161px;
+                height: 28px;
+            }
+        }
+
+        .contact__p-right-wrapper {
+            margin-left: 84px;
+            font-size: get-fz(41);
+
+
+            .contact__mail-right {
+                margin-top: 70px;
+            }
+
+
+            .contact__p-right:nth-child(1) {
+                margin-top: 0;
+
+                height: 37px;
+            }
+
+
+            .contact__mail-right {
+                margin-top: 70px;
+                width: 372px;
+                height: 34px;
+
+            }
+
+            .contact__phone-right {
+                margin-top: 78px;
+                height: 27px;
+            }
+
+            .contact__website-right {
+                margin-top: 78px;
+                width: 330px;
+                height: 39px;
+            }
+
+        }
+    }
 }
