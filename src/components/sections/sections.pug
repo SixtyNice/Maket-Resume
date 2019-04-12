@@ -31,6 +31,17 @@ mixin sections(title)
                         p(class='contact__p-right contact__mail-right') contact@domain.com
                         p(class='contact__p-right contact__phone-right') 555-555-555
                         p(class='contact__p-right contact__website-right') www.yourweb.com
+        when "skills"
+            .skills-wrapper
+                .skills-head
+                    +icons("skills")
+                    p.skills__title #{title}
+                    +line("skills")
+                .skills-content
+                    
+
+
+
 
 
 

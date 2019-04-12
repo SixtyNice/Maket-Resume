@@ -6,29 +6,37 @@
     align-items: center;
 }
 
+
+//Title of sections
+.profile__title,
+.contact__title,
+.skills__title {
+    font-size: get-fz(82);
+    font-weight: 700;
+    color: $titles-color;
+    margin-left: 24px;
+    text-transform: uppercase;
+}
+
+
+//head of sections
+.profile-head,
+.contact-head,
+.skills-head {
+    @include head-sections();
+}
+
+
+.line{
+    width: 100%;
+}
+
+
+
 .profile-wrapper {
     width: 827px;
     height: 645px;
     margin-top: calc-width(165, 2244);
-
-    .profile__title,
-    .contact__title {
-        font-size: get-fz(82);
-        font-weight: 700;
-        color: $titles-color;
-        margin-left: 24px;
-        text-transform: uppercase;
-    }
-
-    .profile-head,
-    .contact-head {
-        @include head-sections();
-    }
-
-    .profile__line,
-    .contact__line {
-        width: 100%;
-    }
 
     .profile__text {
         margin-top: 30px;
@@ -40,6 +48,7 @@
         }
     }
 }
+
 
 .contact-wrapper {
     @extend .profile-wrapper;
@@ -120,4 +129,8 @@
 
         }
     }
+}
+
+.skills-wrapper{
+    @extend .profile-wrapper;
 }
