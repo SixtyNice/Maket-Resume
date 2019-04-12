@@ -5,20 +5,23 @@ html(lang="en")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         meta(http-equiv="X-UA-Compatible", content="ie=edge")
         title Document
-       
+
     body(class="body")
-     .content-left-side
-      include ./components/base-info/base-info.pug
-      include ./components/sections/sections.pug 
-      +sections("Profile")
-      
-    
-      
-      
-     
-   
-    
-        
-    
-           
-       
+
+        .content
+            .content-left-side
+                include ./components/base-info/base-info.pug
+                include ./components/sections/sections.pug
+                +sections("profile")
+                +sections("contact")
+
+
+
+
+
+
+
+
+
+
+

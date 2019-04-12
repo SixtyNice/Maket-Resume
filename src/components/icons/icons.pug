@@ -1,3 +1,6 @@
 mixin icons(title)
-    if title =profile
-    img(class='profile-icon' src="./assets/img/PROFILE_ICON.png", alt="icon")
+    case title 
+        when "profile"
+            img(class='profile-icon' src="./assets/img/PROFILE_ICON.png", alt="icon")
+        when "contact"
+            img(class='contact-icon' src="./assets/img/contact_icon.png", alt="icon")

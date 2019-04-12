@@ -1,23 +1,50 @@
 @import './src/utilits/vars.scss';
+@import '../line/line.scss';
 
-.profile-wrapper{
+@mixin head-sections {
+    display: flex;
+    align-items: center;
+}
+
+.profile-wrapper {
     width: 827px;
+    height: 645px;
+    margin-top: calc-width(165, 2244);
 
+    .profile__title,
+    .contact__title{
+        font-size: get-fz(82);
+        font-weight: 700;
+        color: $titles-color;
+        margin-left: 24px;
+        text-transform: uppercase;
+    }
+
+    .profile-head,
+    .contact-head {
+        @include head-sections();
+    }
+
+    .profile__line,
+    .contact__line {
+        width: 100%;
+    }
+
+    .profile__text {
+        margin-top: 30px;
+        font-size: get-fz(31);
+
+        .profile__p {
+            
+        }
+
+        .profile__span-bold {
+            height: 100%;
+            font-weight: 700;
+        }
+    }
 }
 
-.profile__title{
-    font-size:get-fz(82);
-    font-weight:700;
-    color:$titles-color;
-}
-
-.profile-head{
-    display: inline;
-}
-
-.profile__line{
-    width: calc-width(337,827);
-}
-.profile__text-bold{
-    font-weight:700;
+.contact-wrapper{
+    @extend .profile-wrapper;
 }
