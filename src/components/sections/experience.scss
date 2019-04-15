@@ -1,0 +1,87 @@
+.experience {
+    width: 1264px;
+    margin-top: 105px;
+    margin-left: 158px;
+
+
+    .experience-head {
+        @include head-sections();
+
+        .experience__title {
+            font-size: get-fz(82);
+            font-weight: 700;
+            color: $titles-color;
+            margin-left: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .experience__ul {
+
+        list-style: none;
+        counter-reset: my-awesome-counter;
+
+
+
+        .experience__li {
+            margin-top: 41px;
+            counter-increment: my-awesome-counter;
+
+            &:first-child{
+                margin-top: 64px;
+            }
+
+            .experience__company-name {
+                font-size: get-fz(51);
+                text-transform: uppercase;
+                font-weight: 700;
+                
+            }
+
+
+            .experience__date {
+                font-size: get-fz(51);
+                font-weight: 400;
+                margin-left: 31px;
+                font-family: $base-font;
+            }
+            
+            
+            .experience__p {
+                font-size: get-fz(31);
+                margin-top: 31px;
+                font-weight: 400;
+                margin-left: 86px;
+            }
+            
+            
+            
+            .experience__your-job {
+                @extend .experience__p;
+                font-size: get-fz(51);
+                margin-top: 32px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .experience__li::before {
+            content: "";
+            background: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 43px;
+            
+        }
+    }
+
+}
+
+
+
+
+
+

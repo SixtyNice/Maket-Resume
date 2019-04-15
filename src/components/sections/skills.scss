@@ -1,0 +1,45 @@
+
+.skills {
+   margin-top:98px;
+
+    .skills-head {
+        @include head-sections();
+
+
+        .skills__title {
+            font-size: get-fz(82);
+            font-weight: 700;
+            color: $titles-color;
+            margin-left: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+
+    .skills-content {
+        margin-top: 58px;
+
+        .skills__circles :nth-child(1) {
+            margin-left: 89px;
+            display: inline-block;
+        }
+
+        .skills__circles div {
+            display: inline-block;
+            border-radius: 50%;
+            margin-left: 19px;
+            display: inline-block;
+        }
+
+        .skills__creative,
+        .skills__teamwork,
+        .skills__innovate,
+        .skills__communication {
+            text-align: center;
+            font-size: get-fz(51);
+            font-weight: 400;
+            text-transform: uppercase;
+        }
+    }
+}

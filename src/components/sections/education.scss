@@ -1,0 +1,88 @@
+.education {
+    width: 1264px;
+    margin-top: 0;
+    margin-left: 158px;
+
+    .education-head {
+        @include head-sections();
+
+        .education__title {
+            font-size: get-fz(82);
+            font-weight: 700;
+            color: $titles-color;
+            margin-left: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .education__ul {
+
+        list-style: none;
+        counter-reset: my-awesome-counter;
+
+
+
+        .education__li {
+            margin-top: 41px;
+            counter-increment: my-awesome-counter;
+
+            &:first-child{
+                margin-top: 64px;
+            }
+
+            .education__master-degree {
+                height:35px;
+                font-size: get-fz(51);
+                text-transform: uppercase;
+                font-weight: 700;
+                color: $titles-color;
+            }
+
+
+            .education__date {
+                font-size: get-fz(51);
+                font-weight: 400;
+                margin-left: 31px;
+                font-family: $base-font;
+            }
+            
+            
+            .education__p {
+                font-size: get-fz(31);
+                margin-top: 31px;
+                font-weight: 400;
+                margin-left: 86px;
+            }
+            
+            
+            
+            .education__university-name {
+                @extend .education__p;
+                font-size: get-fz(51);
+                margin-top: 32px;
+                text-transform: uppercase;
+            }
+
+        }
+
+        .education__li::before {
+            content: "";
+            background: black;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 43px;
+            
+
+        }
+    }
+
+}
+
+
+
+
+
+

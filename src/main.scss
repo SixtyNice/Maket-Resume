@@ -12,13 +12,11 @@
 }
 
 .content{
-    width: 85%;
+    width: 100%;
     min-width: $min-width;
-    max-width: $max-width;
-    margin-top:6.77%;
-    margin-right:5.12%;
-    margin-bottom:8.51%;
-    margin-left:5.4%;
+    max-width: $max-width;  
+    display: flex;
+
 }
 
 

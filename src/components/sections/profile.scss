@@ -1,0 +1,32 @@
+
+
+
+.profile {
+    margin-top:165px;
+
+    .profile-head {
+        @include head-sections();
+
+        .profile__title {
+            font-size: get-fz(82);
+            font-weight: 700;
+            color: $titles-color;
+            margin-left: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+
+    .profile__text {
+        margin-top: 30px;
+        font-size: get-fz(31);
+
+        .profile__span-bold {
+            height: 100%;
+            font-weight: 700;
+        }
+
+        
+    }
+}

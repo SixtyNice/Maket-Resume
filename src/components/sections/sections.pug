@@ -6,7 +6,7 @@ mixin sections(title)
 
     case title
         when "profile"
-            .profile-wrapper
+            .profile
                 .profile-head
                     +icons("profile")
                     p.profile__title #{title}
@@ -15,7 +15,7 @@ mixin sections(title)
                     p.profile__p  Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu 
                         span.profile__span-bold pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. 
         when "contact"
-            .contact-wrapper
+            .contact
                 .contact-head
                     +icons("contact")
                     p.contact__title #{title}
@@ -32,17 +32,66 @@ mixin sections(title)
                         p(class='contact__p-right contact__phone-right') 555-555-555
                         p(class='contact__p-right contact__website-right') www.yourweb.com
         when "skills"
-            .skills-wrapper
+            .skills
                 .skills-head
                     +icons("skills")
                     p.skills__title #{title}
                     +line("skills")
                 .skills-content
-                    
+                    p.skills__creative creative 
+                    .skills__circles   
+                        -for(let i=0; i<12; i++)
+                            .skills__circle-creative
+                    p.skills__teamwork teamwork
+                    .skills__circles  
+                        -for(let i=0; i<12; i++)
+                            .skills__circle-teamwork
+                    p.skills__innovate innovate
+                    .skills__circles 
+                        -for(let i=0; i<12; i++)
+                            .skills__circle-innovate 
+                    p.skills__communication communication
+                    .skills__circles   
+                        -for(let i=0; i<12; i++)
+                            .skills__circle-communication
+        when "education"
+            .education
+                .education-head
+                    +icons("education")
+                    p.education__title #{title}
+                    +line("education")
+                .education-content
+                    ul.education__ul
+                        -for(let i=0;i<4;i++)
+                            li.education__li 
+                                span.education__master-degree master degree
+                                kbd.education__date  //Feb 2011 - Jun 2014
+                                p.education__university-name university name
+                                p.education__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
+        when "experience"
+            .experience
+                .experience-head
+                    +icons("experience")
+                    p.experience__title #{title}
+                    +line("experience")
+                .experience-content
+                    ul.experience__ul
+                        -for(let i=0;i<4;i++)
+                            li.experience__li 
+                                span.experience__company-name company name
+                                kbd.experience__date  //Feb 2011 - Jun 2014
+                                p.experience__your-job your job here
+                                p.experience__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.
 
 
-
-
+        when "software"
+                    .software
+                        .software-head
+                            +icons("software")
+                            p.software__title #{title}
+                            +line("software")
+                        .software-content
+                            
 
 
 

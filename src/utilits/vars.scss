@@ -4,6 +4,9 @@ $base-color:#3d6cb0;
 $base-font: 'Myriad Pro Regular';
 $titles-color:#006cb4;
 $icons-color:#0270ba;
+$base-gray:#e6e6e6;
+$max-width:1920px;
+$min-width:320px;
 
 
 @function calc-width($n,$w){
@@ -11,9 +14,7 @@ $icons-color:#0270ba;
 }
 
 @function get-fz($px) {
-    @return ($px*100%)/16;
+    @return $px/16 +    em
 }
 
 
-$max-width:1920px;
-$min-width:320px;

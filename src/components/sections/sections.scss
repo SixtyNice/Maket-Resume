@@ -7,130 +7,41 @@
 }
 
 
-//Title of sections
-.profile__title,
-.contact__title,
-.skills__title {
-    font-size: get-fz(82);
-    font-weight: 700;
-    color: $titles-color;
-    margin-left: 24px;
-    text-transform: uppercase;
-}
 
+@import './contact.scss';
+@import './education.scss';
+@import './profile.scss';
+@import './skills.scss';
+@import './experience.scss';
+@import './software.scss';
 
-//head of sections
-.profile-head,
-.contact-head,
-.skills-head {
-    @include head-sections();
-}
-
-
-.line{
+.line {
     width: 100%;
 }
 
 
 
-.profile-wrapper {
-    width: 827px;
-    height: 645px;
-    margin-top: calc-width(165, 2244);
 
-    .profile__text {
-        margin-top: 30px;
-        font-size: get-fz(31);
 
-        .profile__span-bold {
-            height: 100%;
-            font-weight: 700;
-        }
-    }
+
+
+
+
+
+
+
+
+
+.fill {
+    width: 36px;
+    height: 35px;
+    background-color: $base-color;
+
 }
 
+.nofill {
+    width: 36px;
+    height: 35px;
+    background-color: $base-gray;
 
-.contact-wrapper {
-    @extend .profile-wrapper;
-
-    .contact-content {
-        margin-top: 73px;
-        display: flex;
-
-        .contact__p-left-wrapper {
-            height: 363px;
-            @extend .contact__title;
-            // font-size: get-fz(41);
-            font-size: 41px;
-            margin-left: 0;
-
-            .contact__p-left {
-                margin-top: 81px;
-
-            }
-
-            .contact__p-left:nth-child(1) {
-                margin-top: 0;
-                height: 28px;
-                width: 174px;
-            }
-
-            .contact__p-left:nth-child(2) {
-                width: 126px;
-                height: 28px;
-
-            }
-
-            .contact__p-left:nth-child(3) {
-                width: 129px;
-                height: 28px;
-            }
-
-            .contact__p-left:nth-child(4) {
-                width: 161px;
-                height: 28px;
-            }
-        }
-
-        .contact__p-right-wrapper {
-            margin-left: 84px;
-            font-size: get-fz(41);
-
-
-            .contact__mail-right {
-                margin-top: 70px;
-            }
-
-
-            .contact__p-right:nth-child(1) {
-                margin-top: 0;
-
-                height: 37px;
-            }
-
-
-            .contact__mail-right {
-                margin-top: 70px;
-                width: 372px;
-                height: 34px;
-
-            }
-
-            .contact__phone-right {
-                margin-top: 78px;
-                height: 27px;
-            }
-
-            .contact__website-right {
-                margin-top: 78px;
-                width: 330px;
-                height: 39px;
-            }
-
-        }
-    }
-}
-
-.skills-wrapper{
-    @extend .profile-wrapper;
 }
