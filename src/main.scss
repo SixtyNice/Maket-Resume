@@ -4,7 +4,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing:border-box;
+    box-sizing: border-box;
 }
 
 
@@ -16,23 +16,36 @@
 .content {
     width: 100%;
     min-width: $min-width;
-    max-width: $max-width;
     display: flex;
-
+    margin-left: 2%;
+    margin-top: 2%;
 
     .content-left-side {
-        width: 43.85383%;
-        min-width: 600px;        
+        width: get-width(827, 2244);
+        min-width: 600px;
     }
 
     .content-right-side {
-        margin-left: 7.13%;
-        width: get-width(1264,2244);
+        min-width: 600px;
+        width: get-width(1264, 2244);
     }
 
 
 }
 
+@media only screen and (max-width: 1670px) {
+    .content{
+        display: block;
+
+        .content-left-side{
+            width: 100%;
+        }
+
+        .content-right-side{
+            width: 100%;
+        }
+    }
+}
 
 @import 'components/base-info/base-info.scss';
 @import 'components/line/line.scss';
