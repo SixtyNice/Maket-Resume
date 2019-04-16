@@ -1,0 +1,46 @@
+.software {
+    width: 100%;
+    margin-top: 105px;
+    margin-left: 158px;
+
+
+    .software-head {
+        @include head-sections();
+
+        .software__title {
+            font-size: get-fz(82);
+            font-weight: 700;
+            color: $titles-color;
+            margin-left: 24px;
+            text-transform: uppercase;
+        }
+
+    }
+
+    .software-content {
+
+        .software__photoshop,
+        .software__illustrator,
+        .software__indesign,
+        .software__dreamwear,
+        .software__after-effects,
+        .software__html-css {
+            font-size: get-fz(100);
+            text-transform: uppercase;
+        }
+
+        .software__bar{
+            width: 554px;
+            height: 46px;
+            background-color: $base-gray;
+        }
+
+       
+            .software__blue-bar-photoshop {
+                width: 505px;
+                background: $base-color;
+            }
+
+        }
+
+    }

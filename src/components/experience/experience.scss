@@ -1,5 +1,5 @@
 .experience {
-    width: 1264px;
+    width: 100%;
     margin-top: 105px;
     margin-left: 158px;
 
@@ -28,7 +28,7 @@
             margin-top: 41px;
             counter-increment: my-awesome-counter;
 
-            &:first-child{
+            &:first-child {
                 margin-top: 64px;
             }
 
@@ -36,7 +36,7 @@
                 font-size: get-fz(51);
                 text-transform: uppercase;
                 font-weight: 700;
-                
+
             }
 
 
@@ -46,17 +46,17 @@
                 margin-left: 31px;
                 font-family: $base-font;
             }
-            
-            
+
+
             .experience__p {
                 font-size: get-fz(31);
                 margin-top: 31px;
                 font-weight: 400;
                 margin-left: 86px;
             }
-            
-            
-            
+
+
+
             .experience__your-job {
                 @extend .experience__p;
                 font-size: get-fz(51);
@@ -74,14 +74,8 @@
             border-radius: 50%;
             display: inline-block;
             margin-right: 43px;
-            
+
         }
     }
 
 }
-
-
-
-
-
-

@@ -1,9 +1,7 @@
-
-
-
 .profile {
     margin-top:165px;
-
+    width: 100%;
+    min-width: 320px;
     .profile-head {
         @include head-sections();
 

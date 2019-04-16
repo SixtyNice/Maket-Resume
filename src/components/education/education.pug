@@ -1,0 +1,13 @@
+.education
+    .education-head
+        +icons("education")
+        p.education__title education
+        +line("education")
+    .education-content
+        ul.education__ul
+            -for(let i=0;i<4;i++)
+                li.education__li 
+                    span.education__master-degree master degree
+                    kbd.education__date  //Feb 2011 - Jun 2014
+                    p.education__university-name university name
+                    p.education__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.

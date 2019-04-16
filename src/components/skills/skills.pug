@@ -1,0 +1,22 @@
+.skills
+    .skills-head
+        +icons("skills")
+        p.skills__title skills
+        +line("skills")
+    .skills-content
+        p.skills__creative creative 
+        .skills__circles   
+            -for(let i=0; i<12; i++)
+                .skills__circle-creative
+        p.skills__teamwork teamwork
+        .skills__circles  
+            -for(let i=0; i<12; i++)
+                .skills__circle-teamwork
+        p.skills__innovate innovate
+        .skills__circles 
+            -for(let i=0; i<12; i++)
+                .skills__circle-innovate 
+        p.skills__communication communication
+        .skills__circles   
+            -for(let i=0; i<12; i++)
+                .skills__circle-communication

@@ -1,0 +1,13 @@
+.experience
+    .experience-head
+        +icons("experience")
+        p.experience__title experience
+        +line("experience")
+    .experience-content
+        ul.experience__ul
+            -for(let i=0;i<4;i++)
+                li.experience__li 
+                    span.experience__company-name company name
+                    kbd.experience__date  //Feb 2011 - Jun 2014
+                    p.experience__your-job your job here
+                    p.experience__p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque.

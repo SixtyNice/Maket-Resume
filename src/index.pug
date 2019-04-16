@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+
 html(lang="en")
     head
         meta(charset="UTF-8")
@@ -10,16 +10,16 @@ html(lang="en")
 
         .content
             .content-left-side
+                include ./components/icons/icons.pug
+                include ./components/line/line.pug
                 include ./components/base-info/base-info.pug
-                include ./components/sections/sections.pug
-                +sections("profile")
-                +sections("contact")
-                +sections("skills")
+                include ./components/profile/profile.pug
+                include ./components/contact/contact.pug
+                include ./components/skills/skills.pug
             .content-right-side
-                +sections("education")
-                +sections("experience")
-                +sections("software")
-
+                include ./components/education/education.pug
+                include ./components/experience/experience.pug
+                include ./components/software/software.pug
 
 
 

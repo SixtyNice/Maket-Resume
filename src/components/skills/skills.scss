@@ -1,6 +1,6 @@
-
 .skills {
-   margin-top:98px;
+    margin-top: 98px;
+    width: 100%;
 
     .skills-head {
         @include head-sections();
@@ -16,20 +16,23 @@
 
     }
 
-
     .skills-content {
         margin-top: 58px;
 
+
         .skills__circles :nth-child(1) {
-            margin-left: 89px;
+            margin-left: 0;
             display: inline-block;
         }
 
-        .skills__circles div {
-            display: inline-block;
-            border-radius: 50%;
-            margin-left: 19px;
-            display: inline-block;
+        .skills__circles {
+            margin-left: 89px;
+
+            div {
+                border-radius: 50%;
+                margin-left: 19px;
+                display: inline-block;
+            }
         }
 
         .skills__creative,
@@ -41,5 +44,42 @@
             font-weight: 400;
             text-transform: uppercase;
         }
+    }
+}
+
+.fill {
+    width: 1.60vh;
+    height: 1.60vh;
+    background-color: $base-color;
+
+}
+
+.nofill {
+    width: 36px;
+    height: 35px;
+    background-color: $base-gray;
+
+}
+
+
+
+
+
+@media only screen and (max-width: 770px) {
+    .skills__circles {
+        margin-left: 0px;
+
+    }
+
+    .fill {
+        width: 28px;
+        height: 28px;
+    }
+
+
+
+    .nofill {
+        width: 28px;
+        height: 28px;
     }
 }

@@ -1,5 +1,3 @@
-@import './src/utilits/fonts.scss';
-
 $base-color:#3d6cb0;
 $base-font: 'Myriad Pro Regular';
 $titles-color:#006cb4;
@@ -9,12 +7,18 @@ $max-width:1920px;
 $min-width:320px;
 
 
-@function calc-width($n,$w){
-    @return ($n/$w)*100%;
+
+@function get-width($n, $w) {
+    @return percentage($n/$w);
 }
+
+
 
 @function get-fz($px) {
-    @return $px/16 +    em
+    @return $px/16+em;
 }
 
-
+@mixin head-sections {
+    display: flex;
+    align-items: center;
+}

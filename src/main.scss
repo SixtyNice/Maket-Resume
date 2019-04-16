@@ -1,30 +1,45 @@
 @import 'utilits/vars.scss';
+@import 'utilits/fonts.scss';
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing:border-box;
 }
 
 
-.body{  
-    font-family: $base-font;    
+.body {
+    font-family: $base-font;
 }
 
-.content{
+
+.content {
     width: 100%;
     min-width: $min-width;
-    max-width: $max-width;  
+    max-width: $max-width;
     display: flex;
 
+
+    .content-left-side {
+        width: 43.85383%;
+        min-width: 600px;        
+    }
+
+    .content-right-side {
+        margin-left: 7.13%;
+        width: get-width(1264,2244);
+    }
+
+
 }
-
-
-
 
 
 @import 'components/base-info/base-info.scss';
 @import 'components/line/line.scss';
-@import 'components/sections/sections.scss';
 @import 'components/icons/icons.scss';
-
+@import 'components/contact/contact.scss';
+@import 'components/education/education.scss';
+@import 'components/experience/experience.scss';
+@import 'components/profile/profile.scss';
+@import 'components/skills/skills.scss';
+@import 'components/software/software.scss';
