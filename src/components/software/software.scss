@@ -1,7 +1,16 @@
+@mixin blue-bar {
+    content: "";
+    width: 50%;
+    height: 46px;
+    background: $base-color;
+    position: absolute;
+}
+
+
 .software {
     width: 100%;
     margin-top: 105px;
-    margin-left: 158px;
+
 
 
     .software-head {
@@ -18,6 +27,8 @@
     }
 
     .software-content {
+        display: flex;
+        justify-content: space-around;
 
         .software__photoshop,
         .software__illustrator,
@@ -29,18 +40,64 @@
             text-transform: uppercase;
         }
 
-        .software__bar{
-            width: 554px;
+        .software__bar {
+            width: 100%;
             height: 46px;
             background-color: $base-gray;
+            position: relative;
         }
 
-       
-            .software__blue-bar-photoshop {
-                width: 505px;
-                background: $base-color;
+
+        .sofware__gray-bar-photoshop,
+        .sofware__gray-bar-illustrator,
+        .sofware__gray-bar-indesign,
+        .sofware__gray-bar-dreamwear,
+        .sofware__gray-bar-after-effects,
+        .sofware__gray-bar-html-css {
+            &::after {
+                @include blue-bar();
+            }
+        }
+
+        .sofware__gray-bar-illustrator::after {
+            width: get-width(391, 554)
+        }
+
+        .sofware__gray-bar-photoshop::after {
+            width: get-width(505, 554)
+        }
+
+        .sofware__gray-bar-indesign::after {
+            width: get-width(312, 554);
+        }
+        .sofware__gray-bar-dreamwear::after {
+            width: get-width(461, 554);
+        }
+        .sofware__gray-bar-after-effects::after {
+            width: get-width(342, 554);
+        }
+
+        .sofware__gray-bar-html-css::after{
+            width: get-width(505, 554);
+        }
+    }
+    @media only screen and (max-width:2420px){
+        .software-content {
+            display: block;
+
+            p{
+                text-align: center;
             }
 
+            .software__bar{
+                margin: 0 auto;
+            }
         }
-
     }
+    @media only screen and (max-width: 1670px){
+        .software-content {
+            display: flex;
+        }
+    }
+}
+

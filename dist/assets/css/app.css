@@ -15,15 +15,16 @@
 .content {
   width: 100%;
   min-width: 320px;
-  max-width: 1920px;
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  margin-left: 2%;
+  margin-top: 2%; }
   .content .content-left-side {
-    width: 43.85383%;
+    width: 36.85383%;
     min-width: 600px; }
   .content .content-right-side {
-    margin-left: 7.13%;
+    min-width: 600px;
     width: 56.32799%; }
 
 @font-face {
@@ -125,8 +126,7 @@
 
 .education {
   width: 100%;
-  margin-top: 0;
-  margin-left: 158px; }
+  margin-top: 0; }
   .education .education-head {
     display: flex;
     align-items: center; }
@@ -173,10 +173,13 @@
       display: inline-block;
       margin-right: 43px; }
 
+@media only screen and (max-width: 1670px) {
+  .education {
+    margin-left: 0; } }
+
 .experience {
   width: 100%;
-  margin-top: 105px;
-  margin-left: 158px; }
+  margin-top: 105px; }
   .experience .experience-head {
     display: flex;
     align-items: center; }
@@ -220,6 +223,10 @@
       border-radius: 50%;
       display: inline-block;
       margin-right: 43px; }
+
+@media only screen and (max-width: 1670px) {
+  .experience {
+    margin-left: 0; } }
 
 .profile {
   margin-top: 165px;
@@ -295,8 +302,7 @@
 
 .software {
   width: 100%;
-  margin-top: 105px;
-  margin-left: 158px; }
+  margin-top: 105px; }
   .software .software-head {
     display: flex;
     align-items: center; }
@@ -321,4 +327,10 @@
   .software .software-content .software__blue-bar-photoshop {
     width: 505px;
     background: #3d6cb0; }
+
+@media only screen and (max-width: 1670px) {
+  .content {
+    display: block; }
+    .content .content-left-side, .content .content-right-side {
+      width: 100%; } }
 

@@ -17,17 +17,21 @@
     width: 100%;
     min-width: $min-width;
     display: flex;
+    margin-right: 2%;
     margin-left: 2%;
     margin-top: 2%;
-
+    max-width: 3100px;
+    margin-bottom:120px;
     .content-left-side {
         width: get-width(827, 2244);
         min-width: 600px;
     }
 
     .content-right-side {
+        margin-left: 10%;
         min-width: 600px;
         width: get-width(1264, 2244);
+        margin-right: 2%;
     }
 
 
@@ -43,7 +47,10 @@
 
         .content-right-side{
             width: 100%;
+            margin-left: 2%;
         }
+
+
     }
 }
 

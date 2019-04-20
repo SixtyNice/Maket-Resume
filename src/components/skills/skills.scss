@@ -27,11 +27,12 @@
 
         .skills__circles {
             margin-left: 89px;
-
+            
             div {
                 border-radius: 50%;
                 margin-left: 19px;
                 display: inline-block;
+                // position: relative;
             }
         }
 
@@ -48,21 +49,26 @@
 }
 
 .fill {
-    width: 1.60vh;
-    height: 1.60vh;
+    
+    width: get-width(36,821);
+    height:4.384vh;
     background-color: $base-color;
 
 }
 
 .nofill {
-    width: 36px;
-    height: 35px;
+    width: get-width(36,821);
+    height:4.384vh;
     background-color: $base-gray;
 
 }
 
 
-
+@media only screen and (max-width: 1670px){
+    .skills__circles{
+        text-align: center;
+    }
+}
 
 
 @media only screen and (max-width: 770px) {
@@ -72,14 +78,15 @@
     }
 
     .fill {
-        width: 28px;
-        height: 28px;
+        width: get-width(28,770);
+        height: 3.63vh;
     }
 
 
 
     .nofill {
-        width: 28px;
-        height: 28px;
+        width: get-width(28,770);
+        height: 3.63vh;
     }
 }
+
