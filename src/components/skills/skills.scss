@@ -27,7 +27,7 @@
 
         .skills__circles {
             margin-left: 89px;
-            
+
             div {
                 border-radius: 50%;
                 margin-left: 19px;
@@ -46,47 +46,48 @@
             text-transform: uppercase;
         }
     }
+
+    @media only screen and (max-width: 1670px) {
+        .skills__circles {
+            text-align: center;
+        }
+    }
+    
+    
+    @media only screen and (max-width: 770px) {
+        .skills__circles {
+            margin-left: 0px;
+    
+        }
+    
+        .fill {
+            width: 28px;
+            height: 28px;
+        }
+    
+    
+    
+        .nofill {
+    
+            width: 28px;
+            height: 28px;
+        }
+    }
 }
 
 .fill {
-    
-    width: get-width(36,821);
-    height:4.384vh;
-    background-color: $base-color;
 
+    width: 36px;
+    height: 36px;
+    background-color: $base-color;
+    display: flex;
 }
 
 .nofill {
-    width: get-width(36,821);
-    height:4.384vh;
+    width: 36px;
+    height: 36px;
     background-color: $base-gray;
 
 }
 
-
-@media only screen and (max-width: 1670px){
-    .skills__circles{
-        text-align: center;
-    }
-}
-
-
-@media only screen and (max-width: 770px) {
-    .skills__circles {
-        margin-left: 0px;
-
-    }
-
-    .fill {
-        width: get-width(28,770);
-        height: 3.63vh;
-    }
-
-
-
-    .nofill {
-        width: get-width(28,770);
-        height: 3.63vh;
-    }
-}
 
